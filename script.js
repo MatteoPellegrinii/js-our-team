@@ -9,6 +9,26 @@ const cards = [
         job : 'Chief editor',
         foto : []
     },
+    {
+        nome : 'Angela Carrol',
+        job : 'Chief editor',
+        foto : []
+    },
+    {
+        nome : 'Angela Carrol',
+        job : 'Chief editor',
+        foto : []
+    },
+    {
+        nome : 'Angela Carrol',
+        job : 'Chief editor',
+        foto : []
+    },
+    {
+        nome : 'Angela Carrol',
+        job : 'Chief editor',
+        foto : []
+    },
 
 ]
 
