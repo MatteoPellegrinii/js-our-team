@@ -1,7 +1,7 @@
 const AngelaCarrol = {
     nome : ['Angela Carrol'],
     job : ['Chief editor'],
-    foto : ['img/angela-caroll-chief-editor.jpg']
+    foto : []
 
 }
 
@@ -13,7 +13,7 @@ for (let key in AngelaCarrol) {
 
 const imgELem = document.createElement("img");
 imgELem.src = 'img/angela-caroll-chief-editor.jpg';
-
 let addimage = document.querySelector(".card-image");
-
 addimage.append(imgELem);
+
+AngelaCarrol.foto.push(imgELem);
