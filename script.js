@@ -2,32 +2,32 @@ const cards = [
     {
         nome : 'Angela Carrol',
         job : 'Chief editor',
-        foto : [],
+        foto : ['img/angela-caroll-chief-editor.jpg'],
     },
     {
         nome : 'Angela Carrol',
         job : 'Chief editor',
-        foto : []
+        foto : ['img/angela-lopez-social-media-manager.jpg']
     },
     {
         nome : 'Angela Carrol',
         job : 'Chief editor',
-        foto : []
+        foto : ['img/barbara-ramos-graphic-designer.jpg']
     },
     {
         nome : 'Angela Carrol',
         job : 'Chief editor',
-        foto : []
+        foto : ['img/walter-gordon-office-manager.jpg']
     },
     {
         nome : 'Angela Carrol',
         job : 'Chief editor',
-        foto : []
+        foto : ['img/scott-estrada-developer.jpg']
     },
     {
         nome : 'Angela Carrol',
         job : 'Chief editor',
-        foto : []
+        foto : ['img/wayne-barnett-founder-ceo.jpg']
     },
 
 ]
@@ -49,22 +49,25 @@ for (let i = 0; i < cards.length; i++) {
     
     // assegnare immagine
     const imgELem = document.createElement("img");
-    imgELem.src = 'img/angela-caroll-chief-editor.jpg';
+    imgELem.src = cards[i].foto;
     let addimage = document.createElement("div");
     addimage.classList.add("card-image")
     addimage.append(imgELem);
     TeamcardClass.append(addimage);
 
 
+    const textElem = document.createElement("div");
+    textElem.classList.add("card-text");
+    TeamcardClass.append(textElem);
 
     //   assegnare nome
     const nomeElem = document.createElement("h3");
-    TeamcardClass.append(nomeElem);
+    textElem.append(nomeElem);
 
 
     //   assegnare lavoro
     const jobElem = document.createElement("p");
-    TeamcardClass.append(jobElem);
+    textElem.append(jobElem);
 
     let oggettoclasseiesimo = cards[i];
     console.log(oggettoclasseiesimo);
