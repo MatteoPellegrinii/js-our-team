@@ -1,10 +1,19 @@
-const employer = {
-    angelaCarrol : ['Angela Carrol','Chief Editor'],
+const AngelaCarrol = {
+    nome : ['Angela Carrol'],
+    job : ['Chief editor'],
+    foto : ['img/angela-caroll-chief-editor.jpg']
 
 }
 
-for (let key in employer) {
-   console.log(employer[key]);
+for (let key in AngelaCarrol) {
+   console.log(AngelaCarrol[key]);
+
+
 }
 
-var images = document.querySelector("img");
+const imgELem = document.createElement("img");
+imgELem.src = 'img/angela-caroll-chief-editor.jpg';
+
+let addimage = document.querySelector(".card-image");
+
+addimage.append(imgELem);
