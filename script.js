@@ -75,7 +75,6 @@ for (let i = 0; i < cards.length; i++) {
     nomeElem.append(cards[i].nome);
     jobElem.append(cards[i].job);
     
-    
 }
 
 
